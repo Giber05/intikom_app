@@ -51,13 +51,15 @@ class _HomeScreenContent extends StatelessWidget {
                 label: "Case 1",
                 suffixIcon: const Icon(Icons.arrow_right),
                 onPressed: () {
-                  context.router.push(CaseOneRoute());
+                  context.router.push(const CaseOneRoute());
                 }),
             40.verticalSpace,
             UFElevatedButton(
                 label: "Case 2",
                 suffixIcon: const Icon(Icons.arrow_right),
-                onPressed: () {}),
+                onPressed: () {
+                  context.router.push(const CaseTwoHomeRoute());
+                }),
           ],
         ),
       ),
